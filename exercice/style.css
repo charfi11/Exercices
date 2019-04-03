@@ -1,0 +1,310 @@
+/*responsive à faire*/
+body {
+	height: 100%;
+  margin: 0;
+	padding: 0;
+  font-family: "main_font";
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover;
+	color: white;
+	background-image: url('img/cine.jpeg');
+	background-size: cover;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+}
+
+/*mettre un effet flou sur le background*/
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: orange;
+	text-shadow: 1px 1px 2px white;
+}
+
+/*taille de l'ecran max positionné entre le header et footer*/
+
+.vh {
+	min-height: 100vh;
+}
+
+@font-face{
+	font-family: "main_font";
+ 	src: url('BTTF.ttf');
+}
+
+@font-face {
+  font-family: "BTTF.ttf";
+  src: url('BTTF.ttf');
+}
+
+/*parallax js en cours*/
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+header {
+  background-color: black;
+  font-size: 1.2em;
+  max-height: 80px;
+	color: white;
+}
+
+.header ul li {
+  position: relative;
+  display: inline;
+	left: 300px;
+  margin-right: 100px;
+  top: 5px;
+  }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+.logo {
+	animation-name: logo;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+}
+
+/*animation en continue sans pause de l'image à faire*/
+
+@keyframes logo {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+input {
+  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.2) inset;
+  position: relative;
+  max-height: 40px;
+  border-radius: 5%;
+  text-align: center;
+  max-width: 120px;
+  background-color: #F5AD3C;
+  border-color: white;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1em;
+  top: 13px;
+	left: 500px;
+}
+
+input:hover {
+  color: black;
+  background-color: white;
+}
+
+header img {
+  position: relative;
+	float: left;
+}
+
+.bloc {
+	position: relative;
+	width: 1905px;
+	height: 1070px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	margin: 0px;
+	paddng: 0px;
+	}
+
+.img1 {
+	position: relative;
+	animation-name: slid;
+	animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+.img1 p {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	margin: 0px;
+	paddng: 0px;
+}
+
+.img2 {
+	position: relative;
+	animation-name: slid;
+	animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+.img2 p {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	margin: 0px;
+	paddng: 0px;
+}
+
+.img3 {
+	position: relative;
+	animation-name: slid;
+	animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+.img3 p {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	margin: 0px;
+	paddng: 0px;
+}
+
+@keyframes slid {
+	0%, 15%, 100% {
+		left: 0px; /*1ère image*/
+	}
+	35%, 50% {
+		left: -1905px; /*2ème image*/
+	}
+	70%, 85% {
+		left: -3805px; /*3ème image*/
+	}
+}
+
+.section {
+	max-width: auto;
+	align-items: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background-color: black;
+}
+
+.posleft {
+	position: relative;
+	margin: 50px;
+}
+
+.posright {
+	position: relative;
+}
+
+.section img {
+	border-radius: 8%;
+	margin: 10px;
+}
+
+#box {
+	border-radius: 10%;
+	box-shadow: 20px -16px 60px 10px #971918;
+	background-color: #971918;
+	width: 800px;
+	height: 500px;
+}
+
+.section h1 {
+	text-shadow: 1px 1px 2px black;
+}
+
+.categories {
+	background-color: black;
+	margin-top: 300px;
+}
+
+.categories img {
+	filter: blur(1px);
+	border: solid;
+	border-color: #962625;
+	background-color: #971918;
+	border-radius: 50%;
+}
+
+.categories img:hover {
+  box-shadow: none;
+	animation-name: pulse;
+	animation-duration: 500ms;
+	animation-iteration-count: infinite;
+	filter: none;
+	transition: 100ms;
+}
+
+@-webkit-keyframes pulse {
+  from {
+		border-color: orange;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.ligne {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.ligne2 {
+	margin-top: 80px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	position: absolute; /*fixe le footer par rapport à son parent*/
+	bottom: 3000; left: 0; right: 0; /*fixe le footer en bas de page*/
+	margin-top: 300px;
+}
+
+.foottop {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-bottom: 1px solid;
+}
+
+.foottop p {
+	border-right: 5px dotted;
+	padding: 10px;
+}
+
+.footbottom {
+  display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footbottom img {
+	background-color: white;
+	margin-top: 10px;
+	margin-right: 20px;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+}
